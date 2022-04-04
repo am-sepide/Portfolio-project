@@ -2,6 +2,8 @@
 :root {
   --header-font: "Playfair Display", serif;
   --main-font: "Poppins", sans-serif;
+  --base-color: #e2e2e2;
+  --btn-color: #8f8b8b;
 }
 
 body {
@@ -18,22 +20,23 @@ p {
   color: rgba(53, 48, 48, 0.836);
 }
 
-/* .container {
-  background-color: #fdfdfd;
-} */
 .hero {
   background-color: #fdfdfd;
   padding: 120px 20px;
   text-align: center;
 }
 
-.down-part {
-  background-color: #ecdcdc6e;
-  width: 100%;
+.btn-branding {
+  background-color: var(--btn-color);
+  padding: 15px 20px;
+  color: #fdfdfd;
+  font-weight: normal;
+  font-family: var(--main-font);
 }
 
-.boxdown {
-  background-color: #ecdcdc6e;
+.down-part {
+  background-color: var(--base-color);
+  width: 100%;
 }
 
 .typewriter {
