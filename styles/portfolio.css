@@ -109,3 +109,27 @@ img .cover::after {
   padding: 30px 70px;
   border-radius: 10px;
 }
+
+.contact-link {
+  font-size: 25px;
+  text-decoration: none;
+  font-family: var(--main-font);
+  padding: 10px;
+}
+.contact-img {
+  font-size: 32px;
+  font-family: var(--main-font);
+  width: 15px;
+}
+.contact-txt {
+  font-size: 32px;
+  font-family: var(--main-font);
+}
+
+.contact h2 {
+  font-family: var(--header-font);
+  font-weight: bold;
+  font-size: 48px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
