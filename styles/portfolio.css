@@ -20,13 +20,31 @@ p {
   color: rgba(53, 48, 48, 0.836);
 }
 
+img .cover {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+img .cover::after {
+  content: "";
+  background: url(images/background.png);
+  opacity: 0.5;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
 .navbar-nav .active {
   font-weight: bold;
 }
 
 .hero {
   background-color: #fdfdfd;
-  padding: 120px 20px;
+  padding: 120px 20px 0 20px;
   text-align: center;
 }
 
@@ -74,4 +92,20 @@ p {
   to {
     border-color: black;
   }
+}
+
+.content {
+  margin: 170px 20px 80px 0;
+  text-align: center;
+  font-family: var(--header-font);
+}
+
+.projects {
+  font-family: var(--main-font);
+}
+
+.each-project {
+  background-color: var(--base-color);
+  padding: 30px 70px;
+  border-radius: 10px;
 }
