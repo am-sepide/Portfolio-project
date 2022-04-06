@@ -20,6 +20,10 @@ p {
   color: rgba(53, 48, 48, 0.836);
 }
 
+.navbar-nav .active {
+  font-weight: bold;
+}
+
 .hero {
   background-color: #fdfdfd;
   padding: 120px 20px;
