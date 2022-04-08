@@ -121,6 +121,11 @@ img .cover::after {
   font-family: var(--main-font);
   padding: 10px;
 }
+
+.header-img {
+  width: 20px;
+  padding: 10px;
+}
 .contact-img {
   font-size: 32px;
   font-family: var(--main-font);
