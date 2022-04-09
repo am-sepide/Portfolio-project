@@ -1,15 +1,19 @@
 :root {
   --header-font: "Playfair Display", serif;
   --main-font: "Poppins", sans-serif;
-  --base-color: #e2e2e2;
+  --base-dark-color: #dadadadc;
+  /* --base-dark-color: #e2e2e2; */
+  --base-hell-color: #fdfdfd;
   --btn-color: #8f8b8b;
 }
 
 body {
-  background-color: #fdfdfd;
-  background-image: url("../images/background.png");
+  background-color: var(--base-hell-color);
+  background-image: url("../images/background5.png");
   background-repeat: no-repeat;
   background-size: auto;
+  background-position: right bottom;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -22,23 +26,9 @@ p {
   color: rgba(53, 48, 48, 0.836);
 }
 
-/* img .cover {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  background-repeat: no-repeat;
-  background-size: auto;
+.sepide-logo {
+  width: 65px;
 }
-
-img .cover::after {
-  content: "";
-  background: url(images/background.png);
-  opacity: 0.5;
-  bottom: 0;
-  right: 0;
-  position: fixed;
-  z-index: -1;
-} */
 
 .navbar-nav .active {
   font-weight: bold;
@@ -48,9 +38,13 @@ img .cover::after {
   font-size: 20px;
 }
 
+.nav-img {
+  font-size: 27px;
+  padding: 0;
+  margin: 0 10px;
+}
+
 .hero {
-  background: rgba(253, 253, 253, 0.8);
-  /* background-color: #fdfdfd; */
   padding: 120px 20px 0 20px;
   text-align: center;
 }
@@ -58,14 +52,13 @@ img .cover::after {
 .btn-branding {
   background-color: var(--btn-color);
   padding: 15px 20px;
-  color: #fdfdfd;
+  color: var(--base-hell-color);
   font-weight: normal;
   font-family: var(--main-font);
 }
 
 .down-part {
-  background-color: var(--base-color);
-  /* background-color: rgba(133, 155, 184, 0.8);*/
+  background-color: var(--base-dark-color);
   width: 100%;
 }
 
@@ -102,7 +95,23 @@ img .cover::after {
   }
 }
 
-.content {
+p.latest-work {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 30px 0;
+  font-family: var(--header-font);
+}
+
+p.short-project {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+p.about-me {
+  font-size: 17px;
+}
+
+.content-header {
   margin: 170px 20px 80px 0;
   text-align: center;
   font-family: var(--header-font);
@@ -113,9 +122,12 @@ img .cover::after {
 }
 
 .each-project {
-  background-color: var(--base-color);
+  background-color: var(--base-dark-color);
   padding: 30px 70px;
   border-radius: 10px;
+  max-width: 950px;
+  display: block;
+  margin: 0 auto;
 }
 
 .contact-link {
@@ -126,11 +138,6 @@ img .cover::after {
   margin-left: 20px;
 }
 
-.header-img {
-  font-size: 27px;
-  /* padding: 20px; */
-  margin: 0 10px;
-}
 .contact-img {
   font-size: 32px;
   font-family: var(--main-font);
@@ -152,12 +159,17 @@ h2.contact {
 }
 
 .color-contact {
-  background-color: #f0f0f0;
+  background-color: var(--base-dark-color);
   max-width: 100%;
+  min-height: 100vh;
 }
 
 .contact-pic {
-  display: block;
   padding: 50px 10px 50px 0;
-  margin: 10px 0;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.container-contact {
+  margin-right: 0;
 }
