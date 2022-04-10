@@ -35,68 +35,85 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#"
-        ><img
-          src="images/logo.png"
-          alt="sepideh logo"
-          class="img-fluid rounded-circle sepide-logo"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div
-        class="collapse navbar-collapse justify-content-between pe-3"
-        id="navbarNav"
-      >
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="project.html">Project</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <ul class="navbar-nav justify-content-end">
-          <li class="nav-item">
-            <a
-              class="nav-link nav-img"
-              href="mailto:am.sepide@yahoo.com"
-              target="_blank"
-              ><i class="fas fa-envelope"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link nav-img"
-              href="https://www.linkedin.com/in/sepideh-azizi-803089b9"
-              target="_blank"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link nav-img"
-              href="https://www.github.com/am-sepide"
-              target="_blank"
-            >
-              <i class="fab fa-github-square"></i
-            ></a>
-          </li>
-        </ul>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/logo.png"
+            alt="sepideh logo"
+            class="img-fluid rounded-circle sepide-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between pe-3"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" title="Homepage">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" title="About Sepideh"
+                >About</a
+              >
+            </li>
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="project.html"
+                title="Projects of Sepideh"
+                >Project</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="contact.html"
+                title="Contact with Sepideh"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+              <a
+                class="nav-link nav-img"
+                href="mailto:am.sepide@yahoo.com"
+                target="_blank"
+                title="Email"
+                ><i class="fas fa-envelope d-none d-md-block"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-img"
+                href="https://www.linkedin.com/in/sepideh-azizi-803089b9"
+                target="_blank"
+                title="Linkedin profile"
+                ><i class="fab fa-linkedin d-none d-md-block"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-img"
+                href="https://www.github.com/am-sepide"
+                target="_blank"
+                title="GitHub profile"
+              >
+                <i class="fab fa-github-square d-none d-md-block"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <div class="content-header">
@@ -106,22 +123,26 @@
       <div class="container">
         <div class="row mb-5">
           <div class="d-flex justify-content-center each-project">
-            <div class="col-md-6">
+            <div class="col-md-6 d-none d-md-block">
               <img
                 src="images/patinage.PNG"
-                alt="Patinage pic"
+                alt="Patinage picture"
                 class="img-fluid rounded"
               />
             </div>
             <div class="col-md-6">
               <p class="short-project">Patinage Course</p>
               <p class="text-muted">
-                It is my first project and it is basis of HTML and CSS.
+                This simple project was designed using HTML, CSS and Javascript.
+                The source code is hosted on Github and the app is hosted on
+                Netlify. It takes your E-mail address for registration in
+                Patinage class.
               </p>
               <a
                 href="https://stupefied-morse-83b3c3.netlify.app"
                 target="_blank"
                 class="btn btn-branding rounded mb-5 mt-4 shadow-lg"
+                title="Click here"
                 >Load Project</a
               >
             </div>
@@ -132,17 +153,21 @@
             <div class="col-md-6">
               <p class="short-project">Weather App</p>
               <p class="text-muted">
-                This project was build using HTML, CSS, API and JS. It can
-                search for weather anywhere in the world.
+                This project was designed using HTML, CSS, Javascript and
+                Bootstrap with API integration. The source code is hosted on
+                Github and the app is hosted on Netlify. This is a
+                fully-functioning weather application which is able to display
+                the weather of a searched city.
               </p>
               <a
                 href="https://dreamy-kepler-ae4e95.netlify.app"
                 target="_blank"
                 class="btn btn-branding rounded mb-5 mt-4 shadow-lg"
+                title="Click here"
                 >Load Project</a
               >
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 d-none d-md-block">
               <img
                 src="images/weather.PNG"
                 alt="Patinage picture"
@@ -153,10 +178,10 @@
         </div>
         <div class="row mb-5">
           <div class="d-flex justify-content-center each-project">
-            <div class="col-md-6">
+            <div class="col-md-6 d-none d-md-block">
               <img
                 src="images/yoga.jpg"
-                alt="Patinage pic"
+                alt="Yoga picture"
                 class="img-fluid rounded"
               />
             </div>
@@ -170,6 +195,7 @@
                 href="https://stupefied-morse-83b3c3.netlify.app"
                 target="_blank"
                 class="btn btn-branding rounded mb-5 mt-4 shadow-lg"
+                title="Click here"
                 >Load Project</a
               >
             </div>
